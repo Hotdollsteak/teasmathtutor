@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TEAS Math Tutor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>TEAS Math Tutor</h1>
+
+    <label>
+      Topic
+      <select id="topic">
+        <option value="x">Solve for x</option>
+        <option value="percent">Percentages</option>
+        <option value="pemdas">PEMDAS</option>
+        <option value="fractions">Fractions</option>
+      </select>
+    </label>
+
+    <section class="problem-box">
+      <p id="problem">Click New Problem to begin.</p>
+      <input id="answer" placeholder="Enter your answer">
+      <button onclick="checkAnswer()">Check Answer</button>
+      <button onclick="newProblem()">New Problem</button>
+      <p id="feedback"></p>
+      <p id="hint"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
